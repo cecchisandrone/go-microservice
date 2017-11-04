@@ -13,5 +13,6 @@ func main() {
 		v1.GET("/:id", fetchSingleTodo)
 		v1.GET("/", fetchAllTodos)
 	}
+	router.Static("/assets", "./assets")
 	router.Run()
 }
